@@ -9,8 +9,6 @@ def generate_gif(path):
     
     im = images[0]
     im.save('out.gif', save_all=True, append_images=images[1:],loop=0xff, duration=500)
-    # loop 반복 횟수
-    # duration 프레임 전환 속도 (500 = 0.5초)
     return Img(url='out.gif')
 
 gif = generate_gif('PNG_address')
